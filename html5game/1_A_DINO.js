@@ -157,7 +157,7 @@ YOffset:0,CropWidth:4,CropHeight:4,ow:4,oh:4,tp:1},{x:1540,y:1466,w:4,h:4,XOffse
 YOffset:0,CropWidth:4,CropHeight:4,ow:4,oh:4,tp:1},{x:1540,y:1466,w:4,h:4,XOffset:0,YOffset:0,CropWidth:4,CropHeight:4,ow:4,oh:4,tp:1},{x:1671,y:1264,w:1,h:1,XOffset:31,YOffset:31,CropWidth:1,CropHeight:1,ow:64,oh:64,tp:1},{x:1633,y:1283,w:1,h:1,XOffset:0,YOffset:0,CropWidth:1,CropHeight:1,ow:96,oh:96,tp:1}],Textures:["1_A_DINO_texture_0.png","1_A_DINO_texture_1.png"],TexturesBlocks:[{MipsToGenerate:0},{MipsToGenerate:0}],TextureGroupInfo:[{pName:"__YY__0fallbacktexture.png_YYG_AUTO_GEN_TEX_GROUP_NAME_",
 TextureIDs:[0],SpriteIDs:[],SpineSpriteIDs:[],FontIDs:[],TilesetIDs:[]},{pName:"Default",TextureIDs:[1],SpriteIDs:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42],SpineSpriteIDs:[],FontIDs:[0,1,2],TilesetIDs:[0]}],FeatureFlags:{"filt+fx":"filt+fx","subscription":"subscription","gx_mod_wallpaper":"gx_mod_wallpaper","nullish":"nullish","login_sso":"login_sso","operagx-yyc":"operagx-yyc","mqtt":"mqtt","audio-fx":"audio-fx","rollback":"rollback",
 "intellisense":"intellisense","test":"test","custom_env":"custom_env","filt+fx":"filt+fx"},Options:{debugMode:false,AssetCompilerMajorVersion:2,AssetCompilerMinorVersion:0,AssetCompilerBuildVersion:0,GameSpeed:60,DrawColour:4294967295,xscreensize:1280,yscreensize:768,gameId:0,gameGuid:"9e43b98e-8c44-4c3e-a8be-9c3e67f873b1",fullScreen:false,interpolatePixels:false,showCursor:true,scale:1,allowFullScreenKey:true,freezeOnLostFocus:false,showLoadingBar:false,displayErrors:false,writeErrors:false,abortErrors:false,
-variableErrors:true,outputDebugToConsole:true,WebGL:0,WebGLPreserveDrawingBuffer:0,CollisionCompatibility:false,UseNewAudio:true,GameDir:"html5game",Config:"Default",ViewColour:0,CreateEventOrder:false,UseParticles:true,UseBuiltinFont:false,LocalRunAlert:true,crc:0,ProjectName:"1_A_DINO",md5:[225,47,35,0,0,0,0,0,0,0,0,0,0,0,0,0],MajorVersion:1,MinorVersion:0,BuildVersion:0,RevisionVersion:0,DisplayName:"Created with GameMaker",UseFBExtension:false,tm:1692835453,AllowStatistics:"True"}};function gml_GlobalScript_scr_ini(_inst,
+variableErrors:true,outputDebugToConsole:true,WebGL:0,WebGLPreserveDrawingBuffer:0,CollisionCompatibility:false,UseNewAudio:true,GameDir:"html5game",Config:"Default",ViewColour:0,CreateEventOrder:false,UseParticles:true,UseBuiltinFont:false,LocalRunAlert:true,crc:0,ProjectName:"1_A_DINO",md5:[225,47,35,0,0,0,0,0,0,0,0,0,0,0,0,0],MajorVersion:1,MinorVersion:0,BuildVersion:0,RevisionVersion:0,DisplayName:"Created with GameMaker",UseFBExtension:false,tm:1692835958,AllowStatistics:"True"}};function gml_GlobalScript_scr_ini(_inst,
 _other){(_inst.gmlscr_ini=__yy_method(_inst,gml_Script_scr_ini));(_inst.gmlprint=__yy_method(_inst,gml_Script_print));}function gml_Script_scr_ini(_inst,_other){{global.gmlprint_message="";global.gmluser_address="0";}}function gml_Script_print(_inst,_other,argument0){{global.gmlprint_message=yyfplus(global.gmlprint_message,yyfplus("\n",__yy_gml_errCheck(string(argument0))));}}// /// @description multi_chance(value1, chance1, value2, chance2, ..., [default_value]) 
 // /// @param value1 
 // /// @param  chance1 
@@ -197,7 +197,7 @@ function gml_Object_oRestartBtn_Mouse_11(_inst,_other){if(yyfequal(_inst.visible
 function gml_Object_oRestartBtn_Draw_0(_inst,_other){draw_self(_inst);draw_text(yyfplus(__yy_gml_errCheck(_inst.x),76),yyfminus(__yy_gml_errCheck(_inst.y),11),"RESTART");}// /// @description Insert description here 
 function gml_Object_oDino4_skin_Create_0(_inst,
 _other){_inst.depth=(-999999);_inst.image_index=5;}// /// @description Insert description here 
-function gml_Object_oDino4_skin_Mouse_4(_inst,_other){audio_play_sound(3,9,false);yyInst(_inst,_other,17).sprite_index=39;}// /// @description Insert description here 
+function gml_Object_oDino4_skin_Mouse_4(_inst,_other){audio_play_sound(3,9,false);global.gmlskin=4;yyInst(_inst,_other,17).sprite_index=39;}// /// @description Insert description here 
 function gml_Object_oDino4_skin_Mouse_10(_inst,_other){if(yyfequal(global.gmlgame_start,false)){{window_set_cursor((-21));audio_play_sound(8,9,false);};};}// /// @description Insert description here 
 function gml_Object_oDino4_skin_Mouse_11(_inst,
 _other){if(yyfequal(global.gmlgame_start,false)){{window_set_cursor(0);audio_play_sound(8,9,false);};};}// /// @description Insert description here 
@@ -235,7 +235,7 @@ function gml_Object_oBackToMenu_Mouse_11(_inst,_other){if(yyfequal(_inst.visible
 function gml_Object_oBackToMenu_Draw_0(_inst,
 _other){draw_self(_inst);draw_text(yyfplus(__yy_gml_errCheck(_inst.x),68),yyfminus(__yy_gml_errCheck(_inst.y),11),"GIVE UP");}// /// @description Insert description here 
 function gml_Object_oDino1_skin_Create_0(_inst,_other){_inst.depth=(-999999);_inst.image_index=2;}// /// @description Insert description here 
-function gml_Object_oDino1_skin_Mouse_4(_inst,_other){audio_play_sound(3,9,false);yyInst(_inst,_other,17).sprite_index=28;}// /// @description Insert description here 
+function gml_Object_oDino1_skin_Mouse_4(_inst,_other){audio_play_sound(3,9,false);global.gmlskin=1;yyInst(_inst,_other,17).sprite_index=28;}// /// @description Insert description here 
 function gml_Object_oDino1_skin_Mouse_10(_inst,
 _other){if(yyfequal(global.gmlgame_start,false)){{window_set_cursor((-21));audio_play_sound(8,9,false);};};}// /// @description Insert description here 
 function gml_Object_oDino1_skin_Mouse_11(_inst,_other){if(yyfequal(global.gmlgame_start,false)){{window_set_cursor(0);audio_play_sound(8,9,false);};};}// /// @description Insert description here 
@@ -422,26 +422,26 @@ function gml_Object_oMenuSpawner_Create_0(_inst,_other){_inst.gmlcounter=0;}// /
 function gml_Object_oMenuSpawner_Step_0(_inst,_other){(g_yyPrePostObject__=_inst.gmlcounter,_inst.gmlcounter=(g_yyPrePostObject__ instanceof Long?_inst.gmlcounter.subtract(1):--_inst.gmlcounter),
 g_yyPrePostObject__);if((yyGetBool(yyflessequal(_inst.gmlcounter,0)))&&(yyGetBool(yyfnotequal(yyInst(_inst,_other,36).gmlcount,0)))){{instance_create_depth(_inst.x,_inst.y,(-100),13);_inst.gmlcounter=40;};};}// /// @description Insert description here 
 function gml_Object_oDino2_skin_Create_0(_inst,_other){_inst.depth=(-999999);_inst.image_index=4;}// /// @description Insert description here 
-function gml_Object_oDino2_skin_Mouse_4(_inst,_other){audio_play_sound(3,9,false);yyInst(_inst,_other,17).sprite_index=0;
-}// /// @description Insert description here 
+function gml_Object_oDino2_skin_Mouse_4(_inst,_other){audio_play_sound(3,9,false);global.gmlskin=2;yyInst(_inst,
+_other,17).sprite_index=0;}// /// @description Insert description here 
 function gml_Object_oDino2_skin_Mouse_10(_inst,_other){if(yyfequal(global.gmlgame_start,false)){{window_set_cursor((-21));audio_play_sound(8,9,false);};};}// /// @description Insert description here 
 function gml_Object_oDino2_skin_Mouse_11(_inst,_other){if(yyfequal(global.gmlgame_start,false)){{window_set_cursor(0);audio_play_sound(8,9,false);};};}// /// @description Insert description here 
-function gml_Object_oDino2_skin_Draw_0(_inst,_other){if((yyGetBool(yyfequal(global.gmlgame_start,
-false)))&&(yyGetBool(instance_exists(17)))){{draw_self(_inst);};};}// /// @description Inserte aquí la descripción 
+function gml_Object_oDino2_skin_Draw_0(_inst,
+_other){if((yyGetBool(yyfequal(global.gmlgame_start,false)))&&(yyGetBool(instance_exists(17)))){{draw_self(_inst);};};}// /// @description Inserte aquí la descripción 
 function gml_Object_oSolid_3_Create_0(_inst,_other){_inst.gmlactive=1;_inst.alarm=__yy_gml_array_check(_inst.alarm,1584050178);_inst.alarm[__yy_gml_array_check_index_set(0)]=200;_inst.depth=(-100);_inst.image_speed=0;}// /// @description Insert description here 
-function gml_Object_oSolid_3_Alarm_0(_inst,_other){_inst.gmlactive=0;}// /// @description Insert description here 
-function gml_Object_oSolid_3_Step_0(_inst,
-_other){var ___sw54___=global.gmldifficulty;var ___swc55___=-1;if(yyCompareVal(___sw54___,1,g_GMLMathEpsilon,false)==0){___swc55___=0;}else if(yyCompareVal(___sw54___,2,g_GMLMathEpsilon,false)==0){___swc55___=1;}else if(yyCompareVal(___sw54___,3,g_GMLMathEpsilon,false)==0){___swc55___=2;}else if(yyCompareVal(___sw54___,4,g_GMLMathEpsilon,false)==0){___swc55___=3;}else if(yyCompareVal(___sw54___,5,g_GMLMathEpsilon,false)==0){___swc55___=4;}else if(yyCompareVal(___sw54___,6,g_GMLMathEpsilon,false)==0){___swc55___=5;
-}else if(yyCompareVal(___sw54___,7,g_GMLMathEpsilon,false)==0){___swc55___=6;}else if(yyCompareVal(___sw54___,8,g_GMLMathEpsilon,false)==0){___swc55___=7;}else if(yyCompareVal(___sw54___,9,g_GMLMathEpsilon,false)==0){___swc55___=8;}else if(yyCompareVal(___sw54___,10,g_GMLMathEpsilon,false)==0){___swc55___=9;}else if(yyCompareVal(___sw54___,11,g_GMLMathEpsilon,false)==0){___swc55___=10;}switch(___swc55___){case 0:{_inst.x=yyfminus(_inst.x,10);break;}case 1:{_inst.x=yyfminus(_inst.x,11);break;}case 2:{_inst.x=yyfminus(_inst.x,
-12);break;}case 3:{_inst.x=yyfminus(_inst.x,13);break;}case 4:{_inst.x=yyfminus(_inst.x,14);break;}case 5:{_inst.x=yyfminus(_inst.x,15);break;}case 6:{_inst.x=yyfminus(_inst.x,16);break;}case 7:{_inst.x=yyfminus(_inst.x,17);break;}case 8:{_inst.x=yyfminus(_inst.x,18);break;}case 9:{_inst.x=yyfminus(_inst.x,19);break;}case 10:{_inst.x=yyfminus(_inst.x,20);break;}};var gmltrap_id=instance_place(_inst,_inst.x,yyfplus(__yy_gml_errCheck(_inst.y),90),29);if(yyfnotequal(gmltrap_id,(-4))){{instance_destroy(_inst,
-gmltrap_id);};};var gmltrap_id=instance_place(_inst,yyfplus(__yy_gml_errCheck(_inst.x),400),yyfplus(__yy_gml_errCheck(_inst.y),90),29);if(yyfnotequal(gmltrap_id,(-4))){{instance_destroy(_inst,gmltrap_id);};};}// /// @description Insert description here 
-function gml_Object_oSolid_3_Other_40(_inst,_other){if(yyfequal(_inst.gmlactive,0)){{instance_destroy(_inst);};};}// /// @description Insert description here 
-function gml_Object_oDino3_skin_Create_0(_inst,_other){_inst.depth=(-999999);_inst.image_index=3;
+function gml_Object_oSolid_3_Alarm_0(_inst,_other){_inst.gmlactive=0;
 }// /// @description Insert description here 
-function gml_Object_oDino3_skin_Mouse_4(_inst,_other){audio_play_sound(3,9,false);yyInst(_inst,_other,17).sprite_index=21;}// /// @description Insert description here 
+function gml_Object_oSolid_3_Step_0(_inst,_other){var ___sw54___=global.gmldifficulty;var ___swc55___=-1;if(yyCompareVal(___sw54___,1,g_GMLMathEpsilon,false)==0){___swc55___=0;}else if(yyCompareVal(___sw54___,2,g_GMLMathEpsilon,false)==0){___swc55___=1;}else if(yyCompareVal(___sw54___,3,g_GMLMathEpsilon,false)==0){___swc55___=2;}else if(yyCompareVal(___sw54___,4,g_GMLMathEpsilon,false)==0){___swc55___=3;}else if(yyCompareVal(___sw54___,5,g_GMLMathEpsilon,false)==0){
+___swc55___=4;}else if(yyCompareVal(___sw54___,6,g_GMLMathEpsilon,false)==0){___swc55___=5;}else if(yyCompareVal(___sw54___,7,g_GMLMathEpsilon,false)==0){___swc55___=6;}else if(yyCompareVal(___sw54___,8,g_GMLMathEpsilon,false)==0){___swc55___=7;}else if(yyCompareVal(___sw54___,9,g_GMLMathEpsilon,false)==0){___swc55___=8;}else if(yyCompareVal(___sw54___,10,g_GMLMathEpsilon,false)==0){___swc55___=9;}else if(yyCompareVal(___sw54___,11,g_GMLMathEpsilon,false)==0){___swc55___=10;}switch(___swc55___){case 0:{
+_inst.x=yyfminus(_inst.x,10);break;}case 1:{_inst.x=yyfminus(_inst.x,11);break;}case 2:{_inst.x=yyfminus(_inst.x,12);break;}case 3:{_inst.x=yyfminus(_inst.x,13);break;}case 4:{_inst.x=yyfminus(_inst.x,14);break;}case 5:{_inst.x=yyfminus(_inst.x,15);break;}case 6:{_inst.x=yyfminus(_inst.x,16);break;}case 7:{_inst.x=yyfminus(_inst.x,17);break;}case 8:{_inst.x=yyfminus(_inst.x,18);break;}case 9:{_inst.x=yyfminus(_inst.x,19);break;}case 10:{_inst.x=yyfminus(_inst.x,20);break;}};var gmltrap_id=instance_place(_inst,
+_inst.x,yyfplus(__yy_gml_errCheck(_inst.y),90),29);if(yyfnotequal(gmltrap_id,(-4))){{instance_destroy(_inst,gmltrap_id);};};var gmltrap_id=instance_place(_inst,yyfplus(__yy_gml_errCheck(_inst.x),400),yyfplus(__yy_gml_errCheck(_inst.y),90),29);if(yyfnotequal(gmltrap_id,(-4))){{instance_destroy(_inst,gmltrap_id);};};}// /// @description Insert description here 
+function gml_Object_oSolid_3_Other_40(_inst,_other){if(yyfequal(_inst.gmlactive,0)){{instance_destroy(_inst);};};}// /// @description Insert description here 
+function gml_Object_oDino3_skin_Create_0(_inst,
+_other){_inst.depth=(-999999);_inst.image_index=3;}// /// @description Insert description here 
+function gml_Object_oDino3_skin_Mouse_4(_inst,_other){audio_play_sound(3,9,false);global.gmlskin=3;yyInst(_inst,_other,17).sprite_index=21;}// /// @description Insert description here 
 function gml_Object_oDino3_skin_Mouse_10(_inst,_other){if(yyfequal(global.gmlgame_start,false)){{window_set_cursor((-21));audio_play_sound(8,9,false);};};}// /// @description Insert description here 
-function gml_Object_oDino3_skin_Mouse_11(_inst,_other){if(yyfequal(global.gmlgame_start,
-false)){{window_set_cursor(0);audio_play_sound(8,9,false);};};}// /// @description Insert description here 
+function gml_Object_oDino3_skin_Mouse_11(_inst,
+_other){if(yyfequal(global.gmlgame_start,false)){{window_set_cursor(0);audio_play_sound(8,9,false);};};}// /// @description Insert description here 
 function gml_Object_oDino3_skin_Draw_0(_inst,_other){if((yyGetBool(yyfequal(global.gmlgame_start,false)))&&(yyGetBool(instance_exists(17)))){{draw_self(_inst);};};}// /// @description Inserte aquí la descripción 
 function gml_Object_oPar_light_Create_0(_inst,_other){_inst.gmllight_size=1;_inst.gmllight_strength=1;}// /// @description Insert description here 
 function gml_Object_oCoin_Create_0(_inst,
